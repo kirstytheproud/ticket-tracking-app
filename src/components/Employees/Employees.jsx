@@ -1,5 +1,5 @@
 import React from 'react'
-import team from '../../data/team';
+// import team from '../../data/team';
 import "./Employees.scss";
 import Counter from "../Counter/Counter"
 
