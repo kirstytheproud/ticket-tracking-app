@@ -17,6 +17,7 @@ const Employees = ({teamsArr}) => {
     <div className='tracker-card'> 
     <h2 className='employee__name'>Name</h2>
 <h3 className='employee__role'>Role</h3>
+{Counter}
 <Counter/>
     </div>
 

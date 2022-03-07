@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.scss';
 import Employees from "./components/Employees/Employees"
-import Counter from "./components/Counter/Counter"
+// import Counter from "./components/Counter/Counter"
 import team from './data/team';
 
 function App() {
