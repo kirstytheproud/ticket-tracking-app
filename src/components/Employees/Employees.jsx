@@ -1,9 +1,9 @@
 import React from 'react'
 // import team from '../../data/team';
 import "./Employees.scss";
-import Counter from "../Counter/Counter"
+// import Counter from "../Counter/Counter"
 
-const Employees = ({teamsArr}) => {
+const Employees = () => {
     // const trackerCardListJSX = teamsArr.map((member, index) => {
 
     //     return <h2>{member.name}</h2>
@@ -17,7 +17,7 @@ const Employees = ({teamsArr}) => {
     <div className='tracker-card'> 
     <h2 className='employee__name'>Name</h2>
 <h3 className='employee__role'>Role</h3>
-{Counter}
+
 <Counter/>
     </div>
 
