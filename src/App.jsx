@@ -1,18 +1,27 @@
 import './App.scss';
 import Employees from "./components/Employees/Employees"
-// import Counter from "./components/Counter/Counter"
-import team from './data/team';
+import Counter from "./components/Counter/Counter"
+import teamArr from './data/team';
 
-function App() {
-  console.log(team);
+const App = () => {
+  console.log(teamArr);
+
+  const allTeamCards = teamArr.map((member) =>  {
+    return (
+      <Employees
+        employeeName={member.name}
+        role={member.role}
+      />
+    );
+  });
+
+  
   return (
     <>
-   <div className='app'> 
-   <h1 className="Title"> Ticket Tracker</h1>
-    <div className="cards-container">
-    <Employees name={team.name} role={team.role}  />  
-    {/* <Counter/> */}
-    </div>
+
+   <h1 className="title">Ticket Tracker</h1>
+<div className='tracker__cards'>
+  {allTeamCards}
     </div>
     </>
   );

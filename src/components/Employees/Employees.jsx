@@ -1,40 +1,56 @@
 import React from 'react'
-// import team from '../../data/team';
+import teamArr from '../../data/team';
 import "./Employees.scss";
+import Counter from '../Counter/Counter';
 // import Counter from "../Counter/Counter"
 
-const Employees = () => {
-    // const trackerCardListJSX = teamsArr.map((member, index) => {
 
-    //     return <h2>{member.name}</h2>
-    //     // return <img key={album.idAlbum} className="album-tiles__img" src={album.strAlbumThumb} alt={album.strAlbum}/>
-   
-    // })
+// − Pass data into them via props
+// deploy the live site
 
-  
-    return (
+const Employees = ({employeeName, role}) => {
+
+//     <div className='tracker-card'> 
+//     <h2 className='employee__name'></h2>
+// <h3 className='employee__role'>Role</h3>
+// </div>
+    
+// − Map over the data file below to create the components
+    // const teamJSX = teamArr.map((member) => {
+    //     return <div key={"team"}> <h2>{member.name}</h2> <h3> {member.role} </h3></div>
+    //   })
       
-    <div className='tracker-card'> 
-    <h2 className='employee__name'>Name</h2>
-<h3 className='employee__role'>Role</h3>
 
-<Counter/>
+//     <h3>{employeeName}</h3>
+//     <h3>{role}</h3>
+
+//     <div className="card">
+//   {teamJSX}
+
+// </div>
+
+    return (
+        <>
+    <div className="employee-card">
+      <div className="employee-card__content">
+        <h2 className="employee-card__heading">{employeeName}</h2>
+        <p className="employee-card__text">
+          {role}
+        </p>
+        <Counter />
+      </div>
     </div>
 
-    // <>
-    // {/* <h3>{title}</h3> */}
-    // <div className='album-tiles'>
-    //     {trackerCardListJSX}
-    // </div>
-    // </>
+         
 
+</>
+  );
   //need to include props for employee name
   //props for employee role 
   //render a basic card
   // can you render multiple cards at once (something += )
   // what are states? Props are used to pass data, whereas state is for managing data
 
-    )
 }
 
 export default Employees;
