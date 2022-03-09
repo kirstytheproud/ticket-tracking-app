@@ -1,5 +1,16 @@
-// .tracker-card__counter {
-//     border: 1px solid black;
-//     width: 100px;
-//     height: 200px;
-// }
+.counter-container {
+    
+    &__heading{
+        font-size: 16px;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__counter{
+        margin: 20px;
+    }
+}
