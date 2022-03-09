@@ -17,10 +17,11 @@ const App = () => {
   
   return (
     <>
-
+<div className="container">
    <h1 className="title">Ticket Tracker</h1>
 <div className='tracker__cards'>
   {allTeamCards}
+    </div>
     </div>
     </>
   );

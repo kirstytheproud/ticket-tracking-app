@@ -1,7 +1,26 @@
 @use "./assets/sass/_variables.scss" as *;
+@font-face {
+  font-family: 'Playfair Display Bold';
+  src: local('Playfair Display Bold'), url("./assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf")
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/images/abstract-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
 
 .title {
+  margin:0;
+  padding: 20px;
   text-align: center;
+  font-family: "Playfair Display Bold";
+  color: white;
+  font-size: 50px;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.75);
 }
 
 .tracker__cards {
