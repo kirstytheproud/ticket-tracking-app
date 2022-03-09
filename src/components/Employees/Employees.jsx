@@ -1,5 +1,4 @@
 import React from 'react'
-import teamArr from '../../data/team';
 import "./Employees.scss";
 import Counter from '../Counter/Counter';
 // import Counter from "../Counter/Counter"
@@ -10,24 +9,6 @@ import Counter from '../Counter/Counter';
 
 const Employees = ({employeeName, role}) => {
 
-//     <div className='tracker-card'> 
-//     <h2 className='employee__name'></h2>
-// <h3 className='employee__role'>Role</h3>
-// </div>
-    
-// − Map over the data file below to create the components
-    // const teamJSX = teamArr.map((member) => {
-    //     return <div key={"team"}> <h2>{member.name}</h2> <h3> {member.role} </h3></div>
-    //   })
-      
-
-//     <h3>{employeeName}</h3>
-//     <h3>{role}</h3>
-
-//     <div className="card">
-//   {teamJSX}
-
-// </div>
 
     return (
         <>

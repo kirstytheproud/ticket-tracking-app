@@ -1,6 +1,5 @@
 import './App.scss';
 import Employees from "./components/Employees/Employees"
-import Counter from "./components/Counter/Counter"
 import teamArr from './data/team';
 
 const App = () => {
