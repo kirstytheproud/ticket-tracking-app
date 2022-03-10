@@ -7,12 +7,10 @@ const Counter = () => {
   const [counter, setCounter] = useState(0);
 
   const handleDecrement = () => {
+       if(counter === 0){
+        return
+      }
     setCounter(counter - 1);
-    
-       if(counter<1){
-      counter = 0;
-    }
-
   };
 
   const handleIncrement = () => {
