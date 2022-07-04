@@ -3,7 +3,7 @@ import Form from "../Form/Form";
 import ToDoList from "../ToDoList/ToDoList";
 import { useState } from "react";
 
-const TaskManager = ({ changeCounter }) => {
+const TaskManager = ({ }) => {
   const [counter, setCounter] = useState(0);
 
   const handleIncrement = () => {

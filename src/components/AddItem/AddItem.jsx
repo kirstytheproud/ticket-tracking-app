@@ -6,15 +6,11 @@ import TaskManager from "../TaskManager/TaskManager";
 
 export const AddItem = () => {
   const [showForm, setShowForm] = useState(false);
-  const [counter, setCounter] = useState(0);
 
   const handleClick = () => {
     setShowForm(!showForm);
   };
 
-  const renderCounter = () => {
-    setCounter(counter);
-  };
 
   return (
     <>
@@ -24,7 +20,7 @@ export const AddItem = () => {
       {showForm ? (
         <div className="add-item">
           <DataList>
-            <TaskManager changeCounter={counter} />
+            <TaskManager />
           </DataList>
         </div>
       ) : (
