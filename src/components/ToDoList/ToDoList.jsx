@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { DataContext } from "../../MyContext";
 import { useState } from "react";
+import deleteIcon from "../../assets/images/icons8-delete-32.png"
 
 const ToDoList = ({ammend}) => {
     const [data, setData] = useContext(DataContext);
@@ -51,9 +52,11 @@ const ToDoList = ({ammend}) => {
                                     snapshot.isDragging ? "selected" : "not-selected"
                                 }
                                 >
-                                    {index + 1}.{item.name}
-                                    {/* <Button clickAction ={deleteItem(item.id)}>Delete</Button> */}
-                                    <button onClick={() => deleteItem(item.id)} onMouseDown={ammend} >Delete</button>
+                               <div className="list__text">    
+                               {/* {index + 1}.  */}
+                               {item.name}</div> 
+                             <img className="icon--delete"src={deleteIcon} alt="delete icon" onClick={() => deleteItem(item.id)} onMouseDown={ammend}/>
+                                
                                 </li>
                             )}
 

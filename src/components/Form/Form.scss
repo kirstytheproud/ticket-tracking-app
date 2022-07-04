@@ -1,0 +1,35 @@
+.input {
+    display: flex;
+    position: relative;
+    
+
+   input{ 
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+    border: 2px rgb(106, 139, 245) solid;
+    border-radius: 5px;
+    color: black;
+    width: 200px;
+    // position: relative;
+
+    &:focus {
+        border: 2px lightblue solid;
+        outline: none;
+      } 
+
+}
+
+
+button {
+    border-radius: 50px;
+    width: 25px;
+    background-color: aquamarine;
+    font-size: 18px;
+    border: solid black 0.5px;
+    position: absolute;
+    bottom: 8px;
+}
+
+}
+
