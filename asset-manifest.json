@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ticket-tracking-app/static/css/main.7f38234c.css",
-    "main.js": "/ticket-tracking-app/static/js/main.9564fc0e.js",
+    "main.css": "/ticket-tracking-app/static/css/main.720906da.css",
+    "main.js": "/ticket-tracking-app/static/js/main.8386172d.js",
     "static/js/787.1463e4c3.chunk.js": "/ticket-tracking-app/static/js/787.1463e4c3.chunk.js",
     "static/media/abstract-background.jpg": "/ticket-tracking-app/static/media/abstract-background.3e76dde71c4cb9480a44.jpg",
     "static/media/PlayfairDisplay-Bold.ttf": "/ticket-tracking-app/static/media/PlayfairDisplay-Bold.bbe756f8cfa0bdd35417.ttf",
     "static/media/OpenSans-Regular.ttf": "/ticket-tracking-app/static/media/OpenSans-Regular.d7d7b8359eeb9cddfba6.ttf",
     "static/media/OpenSans-Bold.ttf": "/ticket-tracking-app/static/media/OpenSans-Bold.6e27168fc8a5a200a026.ttf",
     "index.html": "/ticket-tracking-app/index.html",
-    "main.7f38234c.css.map": "/ticket-tracking-app/static/css/main.7f38234c.css.map",
-    "main.9564fc0e.js.map": "/ticket-tracking-app/static/js/main.9564fc0e.js.map",
+    "main.720906da.css.map": "/ticket-tracking-app/static/css/main.720906da.css.map",
+    "main.8386172d.js.map": "/ticket-tracking-app/static/js/main.8386172d.js.map",
     "787.1463e4c3.chunk.js.map": "/ticket-tracking-app/static/js/787.1463e4c3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f38234c.css",
-    "static/js/main.9564fc0e.js"
+    "static/css/main.720906da.css",
+    "static/js/main.8386172d.js"
   ]
 }
