@@ -1,13 +1,40 @@
 ul {
    list-style: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  //  margin: 0;
+  padding: 0;
 }
 
 li {
-    margin: 10px;
+   margin: 1px;
+   width: 250px;
+   height: 40px;
+   border-radius: 5px;
+   flex-direction: row;
+   align-content: center;
+  text-align: center;
+  position: relative;
+
+  .list__text {
+    flex-direction: row;
+    align-content: center;
+   text-align: center;
+  }
+  
+  .icon--delete {
+    margin: 0;
+    align-items: center;
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+      }
   }
   .not-selected {
-    background-color: blue;
+    background-color: rgb(82, 82, 170, 0.75);
   }
   .selected {
-    background-color: red;
+    background-color: rgb(241, 168, 105);
   }

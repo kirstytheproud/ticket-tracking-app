@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { DataContext } from "../../MyContext";
 import { nanoid } from "nanoid";
+import "./Form.scss";
 
 const Form = ({addTask}) => {
     // retrieve the data and setData hook from MyContext.jsx
@@ -19,13 +20,12 @@ const Form = ({addTask}) => {
     // input text field will capture user intput for the name property
     
     return (
-        <div>
+        <div className="input">
             <form onSubmit={handleSubmit(onSubmit)}>
                 <label>
-                    Task:
-                    <input type="text" {...register("name")} />
+                    <input type="text" placeholder="Add a task..." {...register("name")} />
                 </label>
-                <input type="submit" value="Add" onClick={addTask}/>
+                <button onClick={addTask}>+</button>
             </form>
         </div>
     )

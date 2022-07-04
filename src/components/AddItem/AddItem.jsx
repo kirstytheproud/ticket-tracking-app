@@ -22,7 +22,7 @@ export const AddItem = () => {
           <img src={plus} alt="add-item" onClick={handleClick} />
       </div>
       {showForm ? (
-        <div className="add-item--list">
+        <div className="add-item">
           <DataList>
             <TaskManager changeCounter={counter} />
           </DataList>
