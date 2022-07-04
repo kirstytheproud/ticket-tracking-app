@@ -1,9 +1,10 @@
 import './App.scss';
 import Employees from "./components/Employees/Employees"
 import teamArr from './data/team';
-import Form from './Form';
+
 import { DataList } from './MyContext';
-import ToDoList from './ToDoList';
+import ToDoList from './components/ToDoList/ToDoList';
+import Form from './components/Form/Form';
 
 const App = () => {
   console.log(teamArr);

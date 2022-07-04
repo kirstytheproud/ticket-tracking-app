@@ -1,15 +1,20 @@
+import "./ToDoList.scss"
 import { useContext } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import { DataContext } from "./MyContext";
+import { DataContext } from "../../MyContext";
+import { useState } from "react";
 
-const ToDoList = () => {
+const ToDoList = ({ammend}) => {
     const [data, setData] = useContext(DataContext);
+    // const [counter, setCounter] = useContext(CounterContext);
+    const [deleted, setDeleted] = useState(false);
 
     //accepts ID as parameter - this will be ID of task we want to delete, use .filter to remove selected task
    //the returned value is x.id!==product.id because if the id matches, 
    // x.id !== product.id will evaluate to false and returning false will remove the product.
     const deleteItem = (id) => {
         setData(data.filter((x) => x.id !== id))
+        setDeleted(!deleted);
     };
 
 //     Lines 2: Convert the data Hook into array form.
@@ -47,7 +52,8 @@ const ToDoList = () => {
                                 }
                                 >
                                     {index + 1}.{item.name}
-                                    <button onClick={() => deleteItem(item.id)}>Delete</button>
+                                    {/* <Button clickAction ={deleteItem(item.id)}>Delete</Button> */}
+                                    <button onClick={() => deleteItem(item.id)} onMouseDown={ammend} >Delete</button>
                                 </li>
                             )}
 

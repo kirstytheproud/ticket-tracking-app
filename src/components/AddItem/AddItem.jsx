@@ -1,60 +1,38 @@
-import "./AddItem.scss"
-import plus from "../../assets/images/plus.png"
+import "./AddItem.scss";
+import plus from "../../assets/images/plus.png";
 import { useState } from "react";
-import Input from "../Input/Input";
-import ListItem from "../ListItem/ListItem";
+import { DataList } from "../../MyContext";
+import TaskManager from "../TaskManager/TaskManager";
 
 export const AddItem = () => {
-  const [showInput, setShowInput] = useState(false);
-  const [showTask, setShowTask] = useState(false);
-  const [task, setTask] = useState("");
+  const [showForm, setShowForm] = useState(false);
+  const [counter, setCounter] = useState(0);
 
   const handleClick = () => {
-    setShowInput(!showInput);
-    console.log("button clicked");
-  }
- 
-  const handleTask = () => {
-    setShowTask(!showTask);
-  }
-  // const handleInput = (event) => {
-  //   const input = event.target.value;
-  //   setTask(input);
-  // }
+    setShowForm(!showForm);
+  };
 
-  const handleKeyPress = (event) => {
-    if(event.key === 'Enter'){
-    const input = event.target.value;
-    setTask(input);
-    setShowInput(!showInput);
-    setShowTask(!showTask);
-    }
-   }
+  // const renderCounter = () => {
+  //   setCounter(counter);
+  // };
 
   return (
     <>
-    <div className="add-item">
+      <div className="add-item">
+        Tickets:
+        <br></br>
+        {counter}
         <img src={plus} alt="add-item" onClick={handleClick} />
-        </div>
-{showInput ? (
-  <div className="add-item--list">
-      <Input  
-      inputAction={handleKeyPress} />
- 
       </div>
-) : (
-  <div className="add-item">
-  {/* <img src={plus} alt="add-item" onClick={handleClick} /> */}
-  </div>
-)}
-
-{showTask ? (    <ListItem text={task}/> ) : 
-<>
-<ListItem text={task}/>  
-<ListItem text={task}/> 
-</>
- }
-
-</>
-  )
-}
+      {showForm ? (
+        <div className="add-item--list">
+          <DataList>
+            <TaskManager changeCounter={counter} />
+          </DataList>
+        </div>
+      ) : (
+        <div className="add-item"></div>
+      )}
+    </>
+  );
+};

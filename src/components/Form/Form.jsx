@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
-import { DataContext } from "./MyContext";
+import { DataContext } from "../../MyContext";
 import { nanoid } from "nanoid";
 
-const Form = () => {
+const Form = ({addTask}) => {
     // retrieve the data and setData hook from MyContext.jsx
     const [data, setData] = useContext(DataContext);
     const { register, handleSubmit } = useForm();
@@ -11,6 +11,7 @@ const Form = () => {
     //add new item to data array whilst capturing value of the name field
     const onSubmit = (input) => {
         const id = nanoid();
+        // Constructing array literal with spread operator
         setData([...data, { id, name: input.name}]);
     }
 
@@ -21,10 +22,10 @@ const Form = () => {
         <div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <label>
-                    Name:
+                    Task:
                     <input type="text" {...register("name")} />
                 </label>
-                <input type="submit" value="Add" />
+                <input type="submit" value="Add" onClick={addTask}/>
             </form>
         </div>
     )
