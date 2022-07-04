@@ -12,9 +12,9 @@ export const AddItem = () => {
     setShowForm(!showForm);
   };
 
-  // const renderCounter = () => {
-  //   setCounter(counter);
-  // };
+  const renderCounter = () => {
+    setCounter(counter);
+  };
 
   return (
     <>

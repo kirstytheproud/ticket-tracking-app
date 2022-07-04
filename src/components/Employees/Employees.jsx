@@ -1,13 +1,5 @@
-import React, { useContext } from "react";
 import "./Employees.scss";
-import Counter from "../Counter/Counter";
 import { AddItem } from "../AddItem/AddItem";
-import ListItem from "../ListItem/ListItem";
-import { useState } from "react";
-import { DataList } from "../../MyContext";
-import { CounterContext } from "../../MyContext";
-import ToDoList from "../ToDoList/ToDoList";
-import Form from "../Form/Form";
 
 // − Pass data into them via props
 // deploy the live site
