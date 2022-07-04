@@ -1,6 +1,8 @@
 .input {
     display: flex;
     position: relative;
+    margin: 0;
+    padding: 0;
     
 
    input{ 
@@ -11,6 +13,7 @@
     border-radius: 5px;
     color: black;
     width: 200px;
+
     // position: relative;
 
     &:focus {
