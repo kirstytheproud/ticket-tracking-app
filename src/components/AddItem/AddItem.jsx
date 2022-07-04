@@ -19,10 +19,7 @@ export const AddItem = () => {
   return (
     <>
       <div className="add-item">
-        Tickets:
-        <br></br>
-        {counter}
-        <img src={plus} alt="add-item" onClick={handleClick} />
+          <img src={plus} alt="add-item" onClick={handleClick} />
       </div>
       {showForm ? (
         <div className="add-item--list">

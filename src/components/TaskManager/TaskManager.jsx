@@ -16,7 +16,7 @@ const TaskManager = ({ changeCounter }) => {
 
   return (
     <div>
-      <p onChange={changeCounter}> {counter}</p>
+      <p> Tickets: {counter}</p>
       <Form addTask={handleIncrement} />
       <ToDoList ammend={handleDecrement} />
     </div>

@@ -7,7 +7,7 @@ import ToDoList from './components/ToDoList/ToDoList';
 import Form from './components/Form/Form';
 
 const App = () => {
-  console.log(teamArr);
+  // console.log(teamArr);
 
   const allTeamCards = teamArr.map((member) =>  {
     return (
@@ -24,10 +24,10 @@ const App = () => {
     <>
 <div className="container">
    <h1 className="title">Ticket Tracker</h1>
-  <DataList>
+  {/* <DataList>
     <Form />
     <ToDoList />
-   </DataList>
+   </DataList> */}
 <div className='tracker__cards'>
   {allTeamCards}
     </div>
