@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // create a Context object, use its Provider component to share our data Hook with other elements
 export const DataContext = React.createContext([]);
