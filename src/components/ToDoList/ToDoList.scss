@@ -10,8 +10,11 @@ ul {
 
 li {
   margin: 1px;
+  padding: 5px;
   width: 250px;
-  height: 40px;
+  min-height: 36px;
+  // height: 40px;
+  height: auto;
   border-radius: 5px;
   flex-direction: row;
   align-content: center;
@@ -19,9 +22,9 @@ li {
   position: relative;
 
   .list__text {
-    flex-direction: row;
-    align-content: center;
-    text-align: center;
+  font-size: 14px;
+  padding: 8px;
+  text-align: left;
   }
 
   .icon--delete {
