@@ -4,7 +4,7 @@ import { AddItem } from "../AddItem/AddItem";
 // − Pass data into them via props
 // deploy the live site
 
-const Employees = ({ employeeName, role }) => {
+const Employees = ({ employeeName, role}) => {
 
   return (
     <>

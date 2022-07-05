@@ -1,43 +1,62 @@
+@font-face {
+  font-family: "Open Sans Regular";
+  src: local("Open Sans Regular"),
+    url("../../assets/fonts/OpenSans/OpenSans-Regular.ttf");
+}
+
 ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //  margin: 0;
   padding: 0;
 }
 
 li {
-  margin: 1px;
-  padding: 5px;
-  width: 250px;
-  min-height: 36px;
-  // height: 40px;
+  margin: 1.5px;
+  width: 265px;
+  min-height: 35px;
   height: auto;
   border-radius: 5px;
   flex-direction: row;
   align-content: center;
   text-align: center;
   position: relative;
+  box-shadow: -1px -1px 5px 0px rgb(255, 255, 255, 0.5) inset,
+    0.5px 0.5px 2px 0.75px rgb(0, 0, 0, 0.25);
 
   .list__text {
-  font-size: 14px;
-  padding: 8px;
-  text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0px;
+    font-size: 14px;
+    padding: 6px 0;
+    text-align: left;
+    font-family: "Open Sans Regular";
+    color: white;
   }
 
   .icon--delete {
-    margin: 0;
-    align-items: center;
-    position: absolute;
-    right: 6px;
-    bottom: 6px;
+    width: 28px;
+    height: 28px;
+    margin: 0 4px;
+    padding: 3px 0;
+    opacity: 0.7;
   }
 }
 .not-selected {
-  background-color: rgb(82, 82, 170, 0.75);
+   background: linear-gradient(
+    350deg,
+    rgba(72, 66, 193, 0.85) 20%,
+    rgba(0, 226, 246, 0.85) 120%
+  );
 }
 .selected {
-  background-color: rgb(241, 168, 105);
+  background: linear-gradient(
+    357deg,
+    rgb(133, 128, 223, 0.75) 0%,
+    rgb(255, 177, 108) 100%
+  );
 }

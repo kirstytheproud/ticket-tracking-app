@@ -12,6 +12,7 @@ const App = () => {
   const allTeamCards = teamArr.map((member) =>  {
     return (
       <Employees
+        key={member.id}
         employeeName={member.name}
         role={member.role}
       />
@@ -23,7 +24,8 @@ const App = () => {
   return (
     <>
 <div className="container">
-   <h1 className="title">Ticket Tracker</h1>
+   <h1 className="title">Welcome to Trackr</h1>
+   <h2 className='headline'>The best way to keep track of your team</h2>
   {/* <DataList>
     <Form />
     <ToDoList />

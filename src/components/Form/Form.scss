@@ -1,11 +1,10 @@
 .input {
-    display: flex;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0;
 
-   input{ 
+  input {
     padding: 10px;
     padding-left: 20px;
     font-size: 14px;
@@ -14,25 +13,21 @@
     color: black;
     width: 200px;
 
-    // position: relative;
-
     &:focus {
-        border: 2px lightblue solid;
-        outline: none;
-      } 
+      border: 2px lightblue solid;
+      outline: none;
+    }
+  }
 
-}
-
-
-button {
+  button {
     border-radius: 50px;
     width: 25px;
     background-color: aquamarine;
+    margin-left: 2px;
+    font-weight: semi-bold;
     font-size: 18px;
-    border: solid black 0.5px;
+    border: solid rgba(0, 0, 0, 0.374) 0.25px;
     position: absolute;
     bottom: 8px;
+  }
 }
-
-}
-

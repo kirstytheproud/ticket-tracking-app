@@ -6,20 +6,17 @@ export const DataContext = React.createContext([]);
 export const CounterContext = React.createContext();
 
 export const DataList = (props) => {
-    const [data, setData] = useState([]);
-    // const [counter, setCounter] = useState(0);
+  const [data, setData] = useState([]);
 
-    // if the program detects a change in data, output its current value
-    useEffect(() => {
-        console.log(data);
-    }, [data]);
+  // if the program detects a change in data, output its current value
+  // useEffect(() => {
+  //     console.log(data);
+  // }, [data]);
 
-    // share data and setData hook to children of the DataList component
-    return (
-        <DataContext.Provider value ={[data, setData]}>
-
-            {props.children}
-           
-        </DataContext.Provider>
-       )
-}
+  // share data and setData hook to children of the DataList component
+  return (
+    <DataContext.Provider value={[data, setData]}>
+      {props.children}
+    </DataContext.Provider>
+  );
+};
